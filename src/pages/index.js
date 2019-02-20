@@ -9,7 +9,7 @@ export default ({data}) => {
   console.log(data)
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="This is a home page" />
       <h1 css={css`
         display: inline-block;
         border-bottom: 1px solid;

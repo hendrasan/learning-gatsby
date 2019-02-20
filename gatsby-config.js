@@ -3,7 +3,6 @@ const title = `Pandas Eating Things`
 module.exports = {
   siteMetadata: {
     title: title,
-    titleTemplate: `%s | ${title}`,
     description: `This is a website with pandas Eating Things`,
     siteUrl: '',
     siteImage: `./static/site-image.jpg`,
