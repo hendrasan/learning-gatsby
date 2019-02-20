@@ -10,6 +10,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
       site: {
         siteMetadata: {
           defaultTitle,
+          titleTemplate,
           defaultDescription,
           siteUrl,
           siteImage,
@@ -25,7 +26,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
 
       return (
         <Fragment>
-          <Helmet defaultTitle={seo.title} titleTemplate={`%s | ${seo.title}`}>
+          <Helmet title={seo.title} titleTemplate={titleTemplate}>
             <html lang="en" />
             <link rel="canonical" href={`${siteUrl}${pathname}`} />
             <meta
@@ -73,6 +74,7 @@ const query = graphql`
     site {
       siteMetadata {
         defaultTitle: title
+        titleTemplate
         defaultDescription: description
         siteUrl
         siteImage

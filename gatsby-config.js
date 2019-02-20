@@ -1,8 +1,9 @@
-const title = `Pandas Eating Things`
+const siteTitle = `Pandas Eating Things`
 
 module.exports = {
   siteMetadata: {
-    title: title,
+    title: siteTitle,
+    titleTemplate: `%s | ${siteTitle}`,
     description: `This is a website with pandas Eating Things`,
     siteUrl: '',
     siteImage: `./static/site-image.jpg`,
